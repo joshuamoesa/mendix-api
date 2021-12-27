@@ -63,7 +63,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "<?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Header>\n<ns1:authentication xmlns:ns1=\"http://home.mendix.com/stories\">\n<username>PlatformAPIUser</username>\n<password>PlatformAPIPassword</password>\n</ns1:authentication>\n</soapenv:Header>\n<soapenv:Body>\n<ns1:GetSprints xmlns:ns1=\"http://home.mendix.com/stories\">\n<ProjectID>{{ProjectID}}</ProjectID>\n<ApiKey>{{ProjectApiKey}}</ApiKey>\n</ns1:GetSprints>\n</soapenv:Body>\n</soapenv:Envelope>",
+              "raw": "<?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Header>\n<ns1:authentication xmlns:ns1=\"http://home.mendix.com/stories\">\n<username>PlatformAPIUser</username>\n<password>PlatformAPIPassword</password>\n</ns1:authentication>\n</soapenv:Header>\n<soapenv:Body>\n<ns1:GetSprints xmlns:ns1=\"http://home.mendix.com/stories\">\n<ProjectID>{{AppID}}</ProjectID>\n<ApiKey>{{Mendix-ApiKey}}</ApiKey>\n</ns1:GetSprints>\n</soapenv:Body>\n</soapenv:Envelope>",
               "options": {
                 "raw": {
                   "language": "xml"
@@ -711,37 +711,37 @@
   ],
   "variable": [
     {
-      "id": "0421c08b-1502-4f88-97d9-33b328c3a4f5",
+      "id": "d7c1393e-d674-4018-b68c-54bbdd08713f",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "b2cc5c3a-5a98-4bf2-ace7-f273032ac533",
+      "id": "b77ce13e-869b-4f54-b1bc-c72ccb5d5d4b",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "ad20f2ed-e221-4863-ac8d-42a959ee3bdf",
+      "id": "a9de1e92-b3c3-4fae-83a0-feabb63abdd4",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "b6c66e9c-b777-4c59-a063-cb143802ee01",
+      "id": "2d63f2ac-8c8c-49cb-9d0a-1b27f954bb8c",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "5f09f1d5-5bd8-4a80-99d2-e9851a1212bd",
+      "id": "5004c3a4-1172-41d0-979c-f3650c45975a",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "7c328e7a-178c-4554-bafb-205e1e6f9a76",
+      "id": "6b179fe6-0411-4311-ae36-93c92afc793d",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "19bc5c46-9a75-4f9b-ac18-d12b8e1f9965",
+      "id": "790cab15-5669-418a-8143-26523d3836ae",
       "key": "ProjectApiKey",
       "value": ""
     }
