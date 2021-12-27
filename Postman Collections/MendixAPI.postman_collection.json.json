@@ -726,7 +726,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "0f037ce9-441f-4c95-af82-66cb15c7b01a",
+        "id": "ca5e8234-2bdf-406f-b29e-db68ade93687",
         "type": "text/javascript",
         "exec": [
           ""
@@ -736,7 +736,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "794295a5-62e2-4549-a758-6c0ea7e071aa",
+        "id": "db7c6cd3-41b9-466f-a1a0-04faf343dd5a",
         "type": "text/javascript",
         "exec": [
           ""
@@ -746,38 +746,43 @@
   ],
   "variable": [
     {
-      "id": "cbfbb595-e3b3-41dd-b7bf-731add81f9a5",
+      "id": "2d7d537f-9816-4ad2-bc1f-cf8736cbc913",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "ee9d0184-67b2-4e13-8101-5a8cc5972840",
+      "id": "b83aa82b-2f35-4b6c-86c9-ebdb6e99b83c",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "7f3c87f2-2bc5-4d86-9cab-f7ba1e0ed438",
+      "id": "dcb3d475-ef9e-481b-b657-1aacb91951cc",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "9b0927e7-d551-4b75-859e-0f832ebe0e62",
+      "id": "debcb0ea-576a-4867-8130-f2153f8a72de",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "2786d084-fe96-4f52-be21-27921fc0ae01",
+      "id": "1b6447ad-c816-4ab0-974d-5363b1db78d0",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "e98facb2-c3d9-4a07-94af-78edd520059a",
+      "id": "7765fbe7-6a1f-4eff-a4a6-a3e20ad521c0",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "488aab62-506d-490f-be9c-046f7b9afe31",
+      "id": "ae93b4b4-d685-4456-9f30-8bd38642dd8e",
       "key": "ProjectApiKey",
+      "value": ""
+    },
+    {
+      "id": "262997c5-a659-4c3e-8ad8-2ba441c4b767",
+      "key": "CurrentSprintID",
       "value": ""
     }
   ]
