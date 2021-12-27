@@ -86,9 +86,7 @@
                   "",
                   "console.log(responseJson);",
                   "",
-                  "postman.setGlobalVariable(\"NewSprintID\", responseJson['soap:Envelope']['soap:Body']['tns:CreateSprintResponse'].NewSprintID);",
-                  "",
-                  "console.log(NewSprintID);"
+                  "postman.setGlobalVariable(\"NewSprintID\", responseJson['soap:Envelope']['soap:Body']['tns:CreateSprintResponse'].NewSprintID);"
                 ],
                 "type": "text/javascript"
               }
@@ -729,37 +727,37 @@
   ],
   "variable": [
     {
-      "id": "6d1f2c23-d5ca-4894-8881-054fe3922e87",
+      "id": "75d88a6f-5ce1-43a4-a6e1-42c4c5d52b96",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "35f3873f-03ca-489d-86d1-81e1b09c6a35",
+      "id": "65f2469a-4080-4606-a0c0-1fbaf31479f4",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "441d589e-caa1-48e0-90c4-a5c615ad9553",
+      "id": "d811aa5c-20af-41a5-a441-90ed9ad490dd",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "2fe0e245-9d8d-4f30-8f30-9117d9d93f25",
+      "id": "bf4210a7-ef98-4889-ad64-f6f40aede932",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "94029ca6-8623-46bf-add2-bf27087a3638",
+      "id": "dcf31413-e91b-45b3-afbc-f71f8d50d507",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "798ec3ee-ade1-4819-b1c0-614d8e462be6",
+      "id": "94b3e7c5-ff3a-45ef-9eb6-2ca91fdb06c4",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "600a74cd-0877-41ed-aa70-20725c976763",
+      "id": "db5b510b-135f-4ea7-bba4-08131559d927",
       "key": "ProjectApiKey",
       "value": ""
     }
