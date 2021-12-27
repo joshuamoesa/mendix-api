@@ -54,6 +54,25 @@
         },
         {
           "name": "Get Sprints (SOAP)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f49a47c6-8648-4d7b-bce5-64eb29e4ea9c",
+                "exec": [
+                  "var responseJson = xml2Json(responseBody);",
+                  "",
+                  "//console.log(responseJson);",
+                  "",
+                  "var SprintID = responseJson['soap:Envelope']['soap:Body']['tns:GetSprintsResponse'].Sprints.SprintID;",
+                  "",
+                  "console.log(SprintID);",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "7f384b29-e600-4378-9faf-a8d049a2558f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -727,37 +746,37 @@
   ],
   "variable": [
     {
-      "id": "75d88a6f-5ce1-43a4-a6e1-42c4c5d52b96",
+      "id": "cbfbb595-e3b3-41dd-b7bf-731add81f9a5",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "65f2469a-4080-4606-a0c0-1fbaf31479f4",
+      "id": "ee9d0184-67b2-4e13-8101-5a8cc5972840",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "d811aa5c-20af-41a5-a441-90ed9ad490dd",
+      "id": "7f3c87f2-2bc5-4d86-9cab-f7ba1e0ed438",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "bf4210a7-ef98-4889-ad64-f6f40aede932",
+      "id": "9b0927e7-d551-4b75-859e-0f832ebe0e62",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "dcf31413-e91b-45b3-afbc-f71f8d50d507",
+      "id": "2786d084-fe96-4f52-be21-27921fc0ae01",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "94b3e7c5-ff3a-45ef-9eb6-2ca91fdb06c4",
+      "id": "e98facb2-c3d9-4a07-94af-78edd520059a",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "db5b510b-135f-4ea7-bba4-08131559d927",
+      "id": "488aab62-506d-490f-be9c-046f7b9afe31",
       "key": "ProjectApiKey",
       "value": ""
     }
