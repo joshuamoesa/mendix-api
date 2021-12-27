@@ -19,7 +19,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "<?xml version='1.0' encoding='utf-8'?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://wuw.w3.org/2001/XMLSchema-instance\">\n  <soapenv:Body>\n    <nsi:CreateNewApp xmlns:nsi=\"http://www.mendix.com/\">\n      <ProjectName>TestAppForBI</ProjectName>\n      <ProjectSummary>Generated with API</ProjectSummary>\n      <User>{{Mendix-username}}@mendix.com</User>\n      <ApiKey>{{Mendix-ApiKey}}</ApiKey>\n      <TemplateUUID></TemplateUUID>\n    </nsi:CreateNewApp>\n  </soapeny:Body>\n</soapenv:Envelope>",
+              "raw": "<?xml version='1.0' encoding='utf-8'?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://wuw.w3.org/2001/XMLSchema-instance\">\n    <soapenv:Body>\n        <nsi:CreateNewApp xmlns:nsi=\"http://www.mendix.com/\">\n            <ProjectName>TestAppForBI</ProjectName>\n            <ProjectSummary>Generated with API</ProjectSummary>\n            <User>{{Mendix-username}}@mendix.com</User>\n            <ApiKey>{{Mendix-ApiKey}}</ApiKey>\n            <TemplateUUID></TemplateUUID>\n        </nsi:CreateNewApp>\n    </soapeny:Body>\n</soapenv:Envelope>",
               "options": {
                 "raw": {
                   "language": "xml"
@@ -754,47 +754,47 @@
   ],
   "variable": [
     {
-      "id": "1c5b97a0-3edd-41b9-a258-96a805e3458a",
+      "id": "af58d845-cd4a-4f26-a7b8-47808e1c46f3",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "41dd05f9-40d3-4bfc-9f96-7792da9967ca",
+      "id": "a1d9c67e-2667-4a00-9532-ae1792cb4323",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "b1c300d7-12fd-48aa-8832-6723335fcd55",
+      "id": "cdf472e9-6013-41ff-a4d3-602ae44d9c02",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "ddbccc98-6538-4892-b346-f8417c157877",
+      "id": "9f26c60d-fdbf-4fa2-bf60-740f96bf90c3",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "d7ee3fba-1311-4070-a3b3-dad9ee47f50f",
+      "id": "e1d499b4-2df2-4c77-b368-2c2e1db24bce",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "0a4fa1eb-df24-4de5-af6b-1d960ec77708",
+      "id": "7ce00f98-8cd3-4182-8217-69f41ba5b966",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "ee3f0ee0-461b-477d-92a3-f4c4d47f5303",
+      "id": "8d99830b-f418-4a40-b821-fbbbbcdcb9da",
       "key": "ProjectApiKey",
       "value": ""
     },
     {
-      "id": "15580724-547e-4f65-bdc9-7318cfccbca4",
+      "id": "26f22efe-c680-4d6e-add6-7c19c37b59ee",
       "key": "CurrentSprintID",
       "value": ""
     },
     {
-      "id": "d2aa3fcb-790a-4c03-8722-04cd14aafcc1",
+      "id": "68348742-4112-43a9-8eab-9a39aa4eb75a",
       "key": "NewSprintID",
       "value": ""
     }
