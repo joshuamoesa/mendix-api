@@ -103,9 +103,12 @@
                 "exec": [
                   "var responseJson = xml2Json(responseBody);",
                   "",
-                  "console.log(responseJson);",
+                  "//console.log(responseJson);",
                   "",
-                  "postman.setGlobalVariable(\"NewSprintID\", responseJson['soap:Envelope']['soap:Body']['tns:CreateSprintResponse'].NewSprintID);"
+                  "var NewSprintID = responseJson['soap:Envelope']['soap:Body']['tns:CreateSprintResponse'].NewSprintID;",
+                  "",
+                  "console.log(NewSprintID);",
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -746,42 +749,42 @@
   ],
   "variable": [
     {
-      "id": "2d7d537f-9816-4ad2-bc1f-cf8736cbc913",
+      "id": "3b3aa42f-d64e-4a71-ac12-0c596ac3cb3f",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "b83aa82b-2f35-4b6c-86c9-ebdb6e99b83c",
+      "id": "add5579e-6a6f-4caf-ae50-9097f13299e7",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "dcb3d475-ef9e-481b-b657-1aacb91951cc",
+      "id": "7688b71b-ae3d-42f3-a2c8-4e0a4e522f4a",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "debcb0ea-576a-4867-8130-f2153f8a72de",
+      "id": "c5d9bcab-a501-4f65-8a68-91fb11f5733d",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "1b6447ad-c816-4ab0-974d-5363b1db78d0",
+      "id": "0fb8a705-48aa-4795-960c-9b5b8aff60f2",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "7765fbe7-6a1f-4eff-a4a6-a3e20ad521c0",
+      "id": "a2d0707b-d420-42ef-9c98-7ffb3fe5e458",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "ae93b4b4-d685-4456-9f30-8bd38642dd8e",
+      "id": "7bfe0af8-aa48-4990-a17b-ae2f24c51350",
       "key": "ProjectApiKey",
       "value": ""
     },
     {
-      "id": "262997c5-a659-4c3e-8ad8-2ba441c4b767",
+      "id": "89c57113-c474-49b8-9155-904f54203e01",
       "key": "CurrentSprintID",
       "value": ""
     }
