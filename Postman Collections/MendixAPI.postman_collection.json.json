@@ -123,7 +123,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "<?xml version='1.0' encoding='utf-8'?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <soapenv:Header>\n        <ns1:authentication xmlns:ns1=\"http://home.mendix.com/stories\">\n            <username>PlatformAPIUser</username>\n            <password>PlatformAPIPassword</password>\n        </ns1:authentication>\n    </soapenv:Header>\n    <soapenv:Body>\n        <ns1:CreateSprint\n    xmlns:ns1=\"http://home.mendix.com/stories\">\n            <ProjectID>{{AppID}}</ProjectID>\n            <ApiKey>{{Mendix-ApiKey}}</ApiKey>\n            <Name>Sample Sprint</Name>\n            <DurationInWeeks>1</DurationInWeeks>\n            <StartsAfterSprint>5303629</StartsAfterSprint>\n        </ns1:CreateSprint>\n    </soapenv:Envelope>",
+              "raw": "<?xml version='1.0' encoding='utf-8'?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <soapenv:Header>\n        <ns1:authentication xmlns:ns1=\"http://home.mendix.com/stories\">\n            <username>PlatformAPIUser</username>\n            <password>PlatformAPIPassword</password>\n        </ns1:authentication>\n    </soapenv:Header>\n    <soapenv:Body>\n        <ns1:CreateSprint\n    xmlns:ns1=\"http://home.mendix.com/stories\">\n            <ProjectID>{{AppID}}</ProjectID>\n            <ApiKey>{{Mendix-ApiKey}}</ApiKey>\n            <Name>Sample Sprint</Name>\n            <DurationInWeeks>1</DurationInWeeks>\n            <StartsAfterSprint>{{CurrentSprintID}}</StartsAfterSprint>\n        </ns1:CreateSprint>\n    </soapenv:Envelope>",
               "options": {
                 "raw": {
                   "language": "xml"
@@ -749,42 +749,42 @@
   ],
   "variable": [
     {
-      "id": "3b3aa42f-d64e-4a71-ac12-0c596ac3cb3f",
+      "id": "befe4b6e-0e6c-4d24-9ea6-43e0df287cde",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "add5579e-6a6f-4caf-ae50-9097f13299e7",
+      "id": "d4be43e9-318f-457d-b027-a4a586eb7c15",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "7688b71b-ae3d-42f3-a2c8-4e0a4e522f4a",
+      "id": "b824945f-1f3e-4993-b4b4-9998cd33be04",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "c5d9bcab-a501-4f65-8a68-91fb11f5733d",
+      "id": "e51ec3b8-52a4-4440-b6be-a08926039711",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "0fb8a705-48aa-4795-960c-9b5b8aff60f2",
+      "id": "6208aee1-fbe9-47dd-86a4-f20cda2ea7d4",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "a2d0707b-d420-42ef-9c98-7ffb3fe5e458",
+      "id": "e28bfc3c-df85-482a-b25a-9070037a5cd7",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "7bfe0af8-aa48-4990-a17b-ae2f24c51350",
+      "id": "c42e07cc-d244-4c3d-a417-7ab03b235066",
       "key": "ProjectApiKey",
       "value": ""
     },
     {
-      "id": "89c57113-c474-49b8-9155-904f54203e01",
+      "id": "6cc886a7-fbb6-477f-b067-8d76336d2eb0",
       "key": "CurrentSprintID",
       "value": ""
     }
