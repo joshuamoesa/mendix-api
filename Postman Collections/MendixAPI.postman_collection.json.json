@@ -109,7 +109,7 @@
                   "",
                   "var NewSprintID = responseJson['soap:Envelope']['soap:Body']['tns:CreateSprintResponse'].NewSprintID;",
                   "",
-                  "console.log(NewSprintID);",
+                  "//console.log(NewSprintID);",
                   "",
                   "pm.collectionVariables.set('NewSprintID',NewSprintID);",
                   "",
@@ -754,47 +754,47 @@
   ],
   "variable": [
     {
-      "id": "af58d845-cd4a-4f26-a7b8-47808e1c46f3",
+      "id": "e465f741-7df5-4577-ac6d-cb0916002a42",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "a1d9c67e-2667-4a00-9532-ae1792cb4323",
+      "id": "ba695c86-8169-407a-86d5-49d9329b124f",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "cdf472e9-6013-41ff-a4d3-602ae44d9c02",
+      "id": "82e739e4-8dc8-4e7f-b7f6-a1f58b40e478",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "9f26c60d-fdbf-4fa2-bf60-740f96bf90c3",
+      "id": "89620982-ba2c-4cc7-92fe-7a9b7ae7f3f4",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "e1d499b4-2df2-4c77-b368-2c2e1db24bce",
+      "id": "bb3afbe6-189f-4679-99cd-64a92cbce575",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "7ce00f98-8cd3-4182-8217-69f41ba5b966",
+      "id": "fade61c1-905a-4d85-a596-06378063de44",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "8d99830b-f418-4a40-b821-fbbbbcdcb9da",
+      "id": "f9472870-416e-4e36-849a-6341970732a9",
       "key": "ProjectApiKey",
       "value": ""
     },
     {
-      "id": "26f22efe-c680-4d6e-add6-7c19c37b59ee",
+      "id": "2039a4d1-7f21-4c7f-b70e-f4fbef0372ac",
       "key": "CurrentSprintID",
       "value": ""
     },
     {
-      "id": "68348742-4112-43a9-8eab-9a39aa4eb75a",
+      "id": "69055e5f-c292-4f16-9ed4-6d0908ce6e51",
       "key": "NewSprintID",
       "value": ""
     }
