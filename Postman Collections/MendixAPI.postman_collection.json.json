@@ -731,7 +731,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "ca5e8234-2bdf-406f-b29e-db68ade93687",
+        "id": "e49aa97c-2b6b-4509-aa70-8e82c5c78e77",
         "type": "text/javascript",
         "exec": [
           ""
@@ -741,7 +741,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "db7c6cd3-41b9-466f-a1a0-04faf343dd5a",
+        "id": "dc1fde33-ebfb-4ef4-bbeb-0a9e8674fdcc",
         "type": "text/javascript",
         "exec": [
           ""
@@ -751,43 +751,48 @@
   ],
   "variable": [
     {
-      "id": "5b18c533-d1e7-466b-9abd-43a298db03d6",
+      "id": "e452349b-0b14-4348-8d16-401e16f82a74",
       "key": "Mendix-username",
       "value": "joshua.moesa"
     },
     {
-      "id": "1f6a1374-6d5a-47a8-9c50-34d7f0ab8b86",
+      "id": "d92372d1-541b-4fd3-a478-61c0a62ee57b",
       "key": "Mendix-ApiKey",
       "value": "d54d30b5-701d-485d-9143-e60258743c72"
     },
     {
-      "id": "4c0ceb13-942f-4af6-8c65-7045a244a557",
+      "id": "21d84128-c5df-432e-a472-2fa82a2c9bdf",
       "key": "AppID",
       "value": "27cb629b-1fbd-4f97-8fad-63e12b9d4712"
     },
     {
-      "id": "15164a59-329c-4dc4-a61a-2cd469491564",
+      "id": "ce22268b-b5d5-4ccd-aaa4-399f7a00fcbc",
       "key": "LatestRevisionNumber",
       "value": ""
     },
     {
-      "id": "3dcc5f54-8ddf-411b-b186-9d23d6b325d5",
+      "id": "9525d24f-5128-4c59-abd1-6df330fb7c05",
       "key": "PackageId",
       "value": ""
     },
     {
-      "id": "f0b13e72-7408-45be-af8b-7e59d1b21b1c",
+      "id": "d59d5eb0-1e30-40a2-9c80-a39823e503c7",
       "key": "JobId",
       "value": ""
     },
     {
-      "id": "2ac36a53-0b9c-472a-96df-eb294aba19eb",
+      "id": "47cda815-9c31-4d2f-9347-59d454456a68",
       "key": "ProjectApiKey",
       "value": ""
     },
     {
-      "id": "da3cabd1-eab4-4428-bcb5-f9b158d27e6a",
+      "id": "55c71afd-7bd7-4c67-97f0-b6c967b99ded",
       "key": "CurrentSprintID",
+      "value": ""
+    },
+    {
+      "id": "496f34d3-1e26-4e78-bbe2-cdaf9468dd64",
+      "key": "NewSprintID",
       "value": ""
     }
   ]
