@@ -1,0 +1,793 @@
+{
+  "info": {
+    "_postman_id": "bae56359-9c96-4866-80e0-5d80364c6a90",
+    "name": "MendixAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Projects",
+      "item": [
+        {
+          "name": "Create Project (SOAP)",
+          "_postman_id": "8ca33a8a-86e2-403b-8023-897df3260520",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version='1.0' encoding='utf-8'?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://wuw.w3.org/2001/XMLSchema-instance\">\n  <soapenv:Body>\n    <nsi:CreateNewApp xmlns:nsi=\"http://www.mendix.com/\">\n      <ProjectName>TestAppForBI</ProjectName>\n      <ProjectSummary>Generated with API</ProjectSummary>\n      <User>{{Mendix-username}}@mendix.com</User>\n      <ApiKey>{{Mendix-ApiKey}}</ApiKey>\n      <TemplateUUID></TemplateUUID>\n    </nsi:CreateNewApp>\n  </soapeny:Body>\n</soapenv:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "https://sprintr.home.mendix.com/ws/ProjectsAPI/11/soap1"
+          },
+          "response": []
+        },
+        {
+          "name": "Job Status (SOAP)",
+          "_postman_id": "3d10119f-0903-44c7-b268-c72c840d386c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version='1.0' encoding='utf-8'?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<soapenv:Body>\n<ns1:RetrieveJobStatus xmlns:ns1=\"http://www.mendix.com/\">\n<JobId>b1aa0149-80b5-474e-a891-568210311b97</JobId>\n</ns1:RetrieveJobStatus>\n</soapenv:Body>\n</soapenv:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "https://sprintr.home.mendix.com/ws/ProjectsAPI/11/soap1"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Sprints (SOAP)",
+          "_postman_id": "7f384b29-e600-4378-9faf-a8d049a2558f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Header>\n<ns1:authentication xmlns:ns1=\"http://home.mendix.com/stories\">\n<username>PlatformAPIUser</username>\n<password>PlatformAPIPassword</password>\n</ns1:authentication>\n</soapenv:Header>\n<soapenv:Body>\n<ns1:GetSprints xmlns:ns1=\"http://home.mendix.com/stories\">\n<ProjectID>{{ProjectID}}</ProjectID>\n<ApiKey>{{ProjectApiKey}}</ApiKey>\n</ns1:GetSprints>\n</soapenv:Body>\n</soapenv:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "https://sprintr.home.mendix.com/ws/StoriesAPI"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Sprint (SOAP)",
+          "_postman_id": "b34de77f-a94f-452c-84e2-7bed86e181b3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Header>\n<ns1:authentication xmlns:ns1=\"http://home.mendix.com/stories\">\n<username>PlatformAPIUser</username>\n<password>PlatformAPIPassword</password>\n</ns1:authentication>\n</soapenv:Header>\n<soapenv:Body>\n<ns1:CreateSprint\n    xmlns:ns1=\"http://home.mendix.com/stories\">\n    <ProjectID>b1aa0149-80b5-474e-a891-568210311b97</ProjectID>\n    <ApiKey>f42c2ddc-74fe-4964-a7fb-7fc9733edf76</ApiKey>\n    <Name>Sample Sprint</Name> \n    <DurationInWeeks>1</DurationInWeeks>\n    <StartsAfterSprint>5690975</StartsAfterSprint>\n</ns1:CreateSprint>\n</soapenv:Envelope>\n",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "https://sprintr.home.mendix.com/ws/StoriesAPI"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Story (SOAP)",
+          "_postman_id": "c9c46ff2-dc06-41e4-922d-a5ec3014160b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Header>\n<ns1:authentication xmlns:ns1=\"http://home.mendix.com/stories\">\n<username>PlatformAPIUser</username>\n<password>PlatformAPIPassword</password>\n</ns1:authentication>\n</soapenv:Header>\n<soapenv:Body>\n\n<ns1:CreateStory\n    xmlns:ns1=\"http://home.mendix.com/stories\">\n    <Name>New story</Name>\n    <Description>A new story worth 100 points</Description>\n    <StoryType>Feature</StoryType>\n    <Points>_100</Points>\n    <ProjectID>87f07f85-598e-452f-8454-bf35e680edc6</ProjectID>\n    <ApiKey>e1eed27b-e8c0-4345-8b6d-c4a91888f6d9</ApiKey>\n    <SprintID>5688316</SprintID>\n</ns1:CreateStory>\n\n\n\n\n</soapenv:Envelope>\n",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "https://sprintr.home.mendix.com/ws/StoriesAPI"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "5ca00169-68a1-4b95-a5e7-ec9c455cf984"
+    },
+    {
+      "name": "2. Apps",
+      "item": [
+        {
+          "name": "Get apps",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "2a471394-9789-4ad8-8bb9-63ba98d81c79"
+              }
+            }
+          ],
+          "_postman_id": "bcc39530-e15a-450d-8232-7a03705ed117",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Mendix-Username",
+                "value": "{{Mendix-username}}@mendix.com",
+                "type": "text"
+              },
+              {
+                "key": "Mendix-ApiKey",
+                "value": "{{Mendix-ApiKey}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://deploy.mendix.com/api/1/apps"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "b907883c-a3f6-4856-8f2f-5e9ef52f6b99"
+    },
+    {
+      "name": "3. Branch Info",
+      "item": [
+        {
+          "name": "Get branches",
+          "_postman_id": "47e5ed66-9fa3-4483-b39b-0db79ac2d61c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Mendix-Username",
+                "value": "{{Mendix-username}}@mendix.com",
+                "type": "text"
+              },
+              {
+                "key": "Mendix-ApiKey",
+                "value": "{{Mendix-ApiKey}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/branches"
+          },
+          "response": []
+        },
+        {
+          "name": "Get all revisions for branch",
+          "_postman_id": "3f7c025d-b911-4372-8ba7-74416eedef66",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Mendix-Username",
+                "type": "text",
+                "value": "{{Mendix-username}}@mendix.com"
+              },
+              {
+                "key": "Mendix-ApiKey",
+                "type": "text",
+                "value": "{{Mendix-ApiKey}}"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/branches/trunk/revisions"
+          },
+          "response": []
+        },
+        {
+          "name": "Get the latest rev",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.collectionVariables.set(\"LatestRevisionNumber\",pm.response.json().LatestRevisionNumber)"
+                ],
+                "type": "text/javascript",
+                "id": "0ce57e32-df03-4110-a090-6df329bd2eba"
+              }
+            }
+          ],
+          "_postman_id": "cc52f388-8477-4bcd-bdff-be59b8088dbe",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Mendix-Username",
+                "type": "text",
+                "value": "{{Mendix-username}}@mendix.com"
+              },
+              {
+                "key": "Mendix-ApiKey",
+                "type": "text",
+                "value": "{{Mendix-ApiKey}}"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/branches/trunk"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "f5846e95-80e1-4ece-9bf4-9df6e6a50b1e"
+    },
+    {
+      "name": "4. Package",
+      "item": [
+        {
+          "name": "Check packages",
+          "_postman_id": "487c59d9-db8e-4f6d-897f-d9ca2f86a13d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Mendix-Username",
+                "type": "text",
+                "value": "{{Mendix-username}}@mendix.com"
+              },
+              {
+                "key": "Mendix-ApiKey",
+                "type": "text",
+                "value": "{{Mendix-ApiKey}}"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/packages"
+          },
+          "response": []
+        },
+        {
+          "name": "Build package",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.collectionVariables.set(\"PackageId\",pm.response.json().PackageId)"
+                ],
+                "type": "text/javascript",
+                "id": "b059130c-ab20-4a6d-8cde-15dacf6874a6"
+              }
+            }
+          ],
+          "_postman_id": "e368479e-1733-48dd-9055-2b595af1a65f",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Mendix-Username",
+                "type": "text",
+                "value": "{{Mendix-username}}@mendix.com"
+              },
+              {
+                "key": "Mendix-ApiKey",
+                "type": "text",
+                "value": "{{Mendix-ApiKey}}"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n     \"Branch\" : \"trunk\" ,\n     \"Revision\" :  {{LatestRevisionNumber}} ,\n     \"Version\" :  \"0.0.{{LatestRevisionNumber}}\" ,\n     \"Description\" :  \"Automated build\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/packages"
+          },
+          "response": []
+        },
+        {
+          "name": "Check package status",
+          "_postman_id": "c558b88c-eb15-4ba1-a9f0-b208e2246417",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Mendix-Username",
+                "type": "text",
+                "value": "{{Mendix-username}}@mendix.com"
+              },
+              {
+                "key": "Mendix-ApiKey",
+                "type": "text",
+                "value": "{{Mendix-ApiKey}}"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/packages/{{PackageId}}"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "77d6a27d-0622-4429-a547-5a5555bde9ad"
+    },
+    {
+      "name": "5. Deploy",
+      "item": [
+        {
+          "name": "Environments",
+          "item": [
+            {
+              "name": "Get Environments",
+              "_postman_id": "c77f57d5-0f01-44d6-902e-947c5adfd75e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Mendix-Username",
+                    "type": "text",
+                    "value": "{{Mendix-username}}@mendix.com"
+                  },
+                  {
+                    "key": "Mendix-ApiKey",
+                    "type": "text",
+                    "value": "{{Mendix-ApiKey}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/environments"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "5d6b594f-3517-4c3f-9705-5487b0ce6697",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Stop",
+          "item": [
+            {
+              "name": "Stop Development Environment",
+              "_postman_id": "b374ac3f-ee79-49ab-91e9-0cd8d3d39c3d",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Mendix-Username",
+                    "type": "text",
+                    "value": "{{Mendix-username}}@mendix.com"
+                  },
+                  {
+                    "key": "Mendix-ApiKey",
+                    "type": "text",
+                    "value": "{{Mendix-ApiKey}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/environments/Development/stop"
+              },
+              "response": []
+            },
+            {
+              "name": "Stop Acceptance Environment",
+              "_postman_id": "81cb9380-7b42-4d08-acfe-42557938d533",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Mendix-Username",
+                    "type": "text",
+                    "value": "{{Mendix-username}}@mendix.com"
+                  },
+                  {
+                    "key": "Mendix-ApiKey",
+                    "type": "text",
+                    "value": "{{Mendix-ApiKey}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/environments/Acceptance/stop"
+              },
+              "response": []
+            },
+            {
+              "name": "Stop Production Environment",
+              "_postman_id": "6d5f100c-9012-46b6-b23a-64c3b45e06a1",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Mendix-Username",
+                    "type": "text",
+                    "value": "{{Mendix-username}}@mendix.com"
+                  },
+                  {
+                    "key": "Mendix-ApiKey",
+                    "type": "text",
+                    "value": "{{Mendix-ApiKey}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/environments/Production/stop"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "1b8bd745-993d-46aa-8048-08c67796d2b5",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Transport",
+          "item": [
+            {
+              "name": "Transport package to Development",
+              "_postman_id": "b5251428-9117-4d7c-81a4-20931fb9638a",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Mendix-Username",
+                    "type": "text",
+                    "value": "{{Mendix-username}}@mendix.com"
+                  },
+                  {
+                    "key": "Mendix-ApiKey",
+                    "type": "text",
+                    "value": "{{Mendix-ApiKey}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "PackageId",
+                      "value": "{{PackageId}}",
+                      "type": "text"
+                    }
+                  ],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/environments/Development/transport"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "c10363ef-c9cd-467c-8fdb-a98086090523",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Start",
+          "item": [
+            {
+              "name": "Start Development Environment",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.collectionVariables.set(\"JobId\",pm.response.json().JobId)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "a37982bd-0ac4-4195-943b-f76bdfc2b6ed"
+                  }
+                }
+              ],
+              "_postman_id": "106ddd51-5cae-40b7-b75a-7e077bcffd78",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Mendix-Username",
+                    "type": "text",
+                    "value": "{{Mendix-username}}@mendix.com"
+                  },
+                  {
+                    "key": "Mendix-ApiKey",
+                    "type": "text",
+                    "value": "{{Mendix-ApiKey}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n     \"AutoSyncDb\" :  true\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/environments/Development/start"
+              },
+              "response": []
+            },
+            {
+              "name": "Get Test Environment Status",
+              "_postman_id": "7a0fe5e0-6bdc-4036-8c30-205cee013bc4",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Mendix-Username",
+                    "type": "text",
+                    "value": "{{Mendix-username}}@mendix.com"
+                  },
+                  {
+                    "key": "Mendix-ApiKey",
+                    "type": "text",
+                    "value": "{{Mendix-ApiKey}}"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "https://deploy.mendix.com/api/1/apps/{{AppID}}/environments/Development/start/{{JobId}}"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "fb647ad4-ec14-4bee-800d-660f964acc22",
+          "_postman_isSubFolder": true
+        }
+      ],
+      "_postman_id": "35dc8647-e080-4889-99c8-500b6b592cc5"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ],
+        "id": "9150952c-f2bc-4044-ba45-c0a319ab91bf"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ],
+        "id": "08357271-d354-4328-9d25-a78e8a16ccf5"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "beee1191-c6eb-4c42-83c7-f08743cbd97c",
+      "key": "Mendix-username",
+      "value": "menno.odijk",
+      "type": "string"
+    },
+    {
+      "id": "805ad01f-ddc6-45b4-88e8-8ced46cfee0f",
+      "key": "Mendix-ApiKey",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "afcc9aac-fca0-4938-8b25-d9f2935a9593",
+      "key": "AppID",
+      "value": "menno100",
+      "type": "string"
+    },
+    {
+      "id": "1b67aff2-bd8b-4b45-8bb1-7ea3fefd3731",
+      "key": "LatestRevisionNumber",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "36ac22b4-790e-4cf9-acd9-0a9068000c66",
+      "key": "PackageId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "088db021-f10b-499d-8379-e0f9054b014f",
+      "key": "JobId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "8909da09-7626-4c58-97de-f4c2e37bf03d",
+      "key": "ProjectApiKey",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
